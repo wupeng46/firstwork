@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts_api" extends="json-default">		
+		<action name="Pt_SearchTodayCompanyContractCount" class="ApiAction" method="Pt_SearchTodayCompanyContractCount">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">apiDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="Pt_SearchAllCompanyContractCount" class="ApiAction" method="Pt_SearchAllCompanyContractCount">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">apiDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>	
+		<action name="Pt_SearchCompanyWaybill" class="ApiAction" method="Pt_SearchCompanyWaybill">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">apiDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>	
+		<action name="SearchWaybillByBatch" class="ApiAction" method="SearchWaybillByBatch">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">apiDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>				
+	</package>
+</struts>

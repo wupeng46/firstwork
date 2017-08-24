@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by hanvey (lbs) -->
+<lemis-config>
+	<config name="JMS_CONNECTION_FACTROY" value="weblogic.jms.ConnectionFactory"/>
+	<config name="JNDI_QUEUE_NAME" value="LogMessageQueue"/>
+	<config name="INITIAL_FACTORY" value="weblogic.jndi.WLInitialContextFactory"/>
+	<config name="JMS_URL" value="http://127.0.0.1:7001"/>
+	<config name="URL_PROVIDER" value="http://127.0.0.1:7001"/>
+	<config name="SERVICE_CONFIG_FILE" value="/WEB-INF/conf/ServiceConfig.xml"/>
+	<config name="JTVSHOP_CONFIG_FILE" value="/WEB-INF/conf/JTVSHOP_Config.xml"/>
+	<config name="TEMP_FILE_PATH" value="/ReportTemp/"/>
+	
+	<config name="TEMP_PHOTO_PATH" value="/photo/"/>
+    <!--<config name="TEMP_PHOTO_PATH" value="/data/bea/user_projects/domains/mydomain/photo/"/>-->
+	<config name="WEB_APP" value="/jtvshop"/>
+	<config name="INDEX_PAGE" value="/Index.jsp"/>
+	<config name="MENU_PAGE" value="/Left.jsp"/>
+	<config name="LOGON_PAGE" value="/LogonDialog.jsp"/>
+	<config name="RELOGON_PAGE" value="/ReLogon.jsp" />
+	<config name="MAIN_PAGE" value="/Main.jsp"/>
+	<config name="PAGE_SIZE" value="10"/>
+	<config name="LOG_IS_ASYNCH" value="false"/>
+	<config name="RESET_PASSWD" value="888888"/>
+	<config name="SUPER_USER" value="admin"/>
+	<config name="FREE_REQUESTS" value="/diemana/GetWorkareaAction.do?method=GetCodeValue,/diemana/GetWorkareaAction.do?method=CheckDied"/>
+</lemis-config>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<!-- 财务 -->
+	<bean id="financeDAO" class="com.lbs.apps.finance.dao.FinanceDAOImp" />
+	<bean id="FinanceAction" class="com.lbs.apps.finance.action.FinanceAction" scope="prototype" >
+		<property name="financeDAO">
+			<ref bean="financeDAO"/>
+		</property>
+	</bean>	
+	
+</beans>

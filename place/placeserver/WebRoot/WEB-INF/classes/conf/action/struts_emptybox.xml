@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts_emptybox" extends="json-default">		
+		<action name="EmptyBoxInPark" class="EmptyboxAction" method="EmptyBoxInPark">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">emptyboxDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="EmptyBoxInPlace" class="EmptyboxAction" method="EmptyBoxInPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">emptyboxDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="EmptyBoxOutPlace" class="EmptyboxAction" method="EmptyBoxOutPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">emptyboxDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="EmptyBoxOutPark" class="EmptyboxAction" method="EmptyBoxOutPark">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">emptyboxDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchEmptyBoxWarm" class="EmptyboxAction" method="SearchEmptyBoxWarm">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">emptyboxDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+	</package>
+</struts>

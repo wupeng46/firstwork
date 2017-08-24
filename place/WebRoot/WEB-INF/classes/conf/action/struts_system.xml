@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts_system" extends="json-default">
+		<action name="SearchSysrole" class="SystemAction" method="SearchSysrole">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddSysrole" class="SystemAction" method="AddSysrole">    <!-- 增加角色 -->
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModSysrole" class="SystemAction" method="ModSysrole">    <!-- 修改角色 -->
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelSysrole" class="SystemAction" method="DelSysrole">    <!-- 删除系统角色 -->
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchSyspara" class="SystemAction" method="SearchSyspara">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddSyspara" class="SystemAction" method="AddSyspara">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModSyspara" class="SystemAction" method="ModSyspara">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelSyspara" class="SystemAction" method="DelSyspara">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchSyscode" class="SystemAction" method="SearchSyscode">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="GetSyscodeList" class="SystemAction" method="GetSyscodeList">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddSyscode" class="SystemAction" method="AddSyscode">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModSyscode" class="SystemAction" method="ModSyscode">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelSyscode" class="SystemAction" method="DelSyscode">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchSysgroup" class="SystemAction" method="SearchSysgroup">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchChildSysgroup" class="SystemAction" method="SearchChildSysgroup">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddSysgroup" class="SystemAction" method="AddSysgroup">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModSysgroup" class="SystemAction" method="ModSysgroup">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelSysgroup" class="SystemAction" method="DelSysgroup">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchArea" class="SystemAction" method="SearchArea">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchStateList" class="SystemAction" method="SearchStateList">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchCityList" class="SystemAction" method="SearchCityList">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchAreaList" class="SystemAction" method="SearchAreaList">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchTownList" class="SystemAction" method="SearchTownList">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddArea" class="SystemAction" method="AddArea">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModArea" class="SystemAction" method="ModArea">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelArea" class="SystemAction" method="DelArea">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchSystemlog" class="SystemAction" method="SearchSystemlog">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchSyserrorlog" class="SystemAction" method="SearchSyserrorlog">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchLoginlog" class="SystemAction" method="SearchLoginlog">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchSysuser" class="SystemAction" method="SearchSysuser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchCompanyUser" class="SystemAction" method="SearchCompanyUser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchMemberUser" class="SystemAction" method="SearchMemberUser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchUserAccount" class="SystemAction" method="SearchUserAccount">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchUserImgList" class="SystemAction" method="SearchUserImgList">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchUserrole" class="SystemAction" method="SearchUserrole">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+		
+		<action name="AddSysuser" class="SystemAction" method="AddSysuser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModSysuser" class="SystemAction" method="ModSysuser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModPassword" class="SystemAction" method="ModPassword">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ResetPassword" class="SystemAction" method="ResetPassword">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelSysuser" class="SystemAction" method="DelSysuser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModUserRole" class="SystemAction" method="ModUserRole">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModRoleMenu" class="SystemAction" method="ModRoleMenu">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CheckUserLogin" class="SystemAction" method="CheckUserLogin">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+		<action name="Logoff" class="SystemAction" method="Logoff">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchSysroleMenu" class="SystemAction" method="SearchSysroleMenu">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchSysuserMenu" class="SystemAction" method="SearchSysuserMenu">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>		
+		<action name="CheckRegUser" class="SystemAction" method="CheckRegUser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="RegUser" class="SystemAction" method="RegUser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CheckUser" class="SystemAction" method="CheckUser">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchCountNoticeMsg" class="SystemAction" method="SearchCountNoticeMsg">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SeeNoticeMsg" class="SystemAction" method="SeeNoticeMsg">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchPersonCenter" class="SystemAction" method="SearchPersonCenter">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+		<action name="UploadImg" class="SystemAction" method="UploadImg">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="UploadImgByBase64" class="SystemAction" method="UploadImgByBase64">
+			<result type="json">
+				<param name="excludeProperties">systemDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>		
+	</package>
+</struts>

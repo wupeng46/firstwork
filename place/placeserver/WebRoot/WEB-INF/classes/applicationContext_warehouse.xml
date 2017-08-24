@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<!-- 基础信息 -->
+	<bean id="warehouseDAO" class="com.lbs.apps.warehouse.dao.WarehouseDAOImp" />
+	<bean id="WarehouseAction" class="com.lbs.apps.warehouse.action.WarehouseAction" scope="prototype" >
+		<property name="warehouseDAO">
+			<ref bean="warehouseDAO"/>
+		</property>
+	</bean>	
+	
+</beans>

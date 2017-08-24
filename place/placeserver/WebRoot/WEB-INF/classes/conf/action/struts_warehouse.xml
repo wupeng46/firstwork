@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts_warehouse" extends="json-default">		
+		<action name="SearchStock" class="WarehouseAction" method="SearchStock">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">warehouseDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewStockDetail" class="WarehouseAction" method="ViewStockDetail">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">warehouseDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchStockDetail" class="WarehouseAction" method="SearchStockDetail">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">warehouseDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+	</package>
+</struts>

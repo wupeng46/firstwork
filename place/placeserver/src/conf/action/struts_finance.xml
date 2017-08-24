@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts_finance" extends="json-default">		
+		<action name="SearchReceivableToApply" class="FinanceAction" method="SearchReceivableToApply">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ReceivableApply" class="FinanceAction" method="ReceivableApply">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchReceivableToConform" class="FinanceAction" method="SearchReceivableToConform">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ReceivableConfirm" class="FinanceAction" method="ReceivableConfirm">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchReceivableApply" class="FinanceAction" method="SearchReceivableApply">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CancelReceivableApply" class="FinanceAction" method="CancelReceivableApply">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchReceivableConfirm" class="FinanceAction" method="SearchReceivableConfirm">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CancelReceivableConfirm" class="FinanceAction" method="CancelReceivableConfirm">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchReceivable" class="FinanceAction" method="SearchReceivable">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+		<action name="SearchPayableToApply" class="FinanceAction" method="SearchPayableToApply">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="PayableApply" class="FinanceAction" method="PayableApply">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchPayableToConform" class="FinanceAction" method="SearchPayableToConform">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="PayableConfirm" class="FinanceAction" method="PayableConfirm">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchPayableApply" class="FinanceAction" method="SearchPayableApply">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CancelPayableApply" class="FinanceAction" method="CancelPayableApply">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchPayableConfirm" class="FinanceAction" method="SearchPayableConfirm">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CancelPayableConfirm" class="FinanceAction" method="CancelPayableConfirm">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchPayable" class="FinanceAction" method="SearchPayable">
+			<result type="json">
+				<param name="excludeProperties">financeDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>		
+	</package>
+</struts>

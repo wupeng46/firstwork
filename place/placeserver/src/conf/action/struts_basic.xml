@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts_basic" extends="json-default">		
+		<action name="SearchMember" class="BasicAction" method="SearchMember">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchCompany" class="BasicAction" method="SearchCompany">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddCompany" class="BasicAction" method="AddCompany">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModCompany" class="BasicAction" method="ModCompany">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelCompany" class="BasicAction" method="DelCompany">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewCompany" class="BasicAction" method="ViewCompany">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+		<action name="SearchBox" class="BasicAction" method="SearchBox">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddBox" class="BasicAction" method="AddBox">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModBox" class="BasicAction" method="ModBox">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelBox" class="BasicAction" method="DelBox">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewBox" class="BasicAction" method="ViewBox">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchBoxMana" class="BasicAction" method="SearchBoxMana">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+		<action name="SearchPlace" class="BasicAction" method="SearchPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddPlace" class="BasicAction" method="AddPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModPlace" class="BasicAction" method="ModPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="DelPlace" class="BasicAction" method="DelPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewPlace" class="BasicAction" method="ViewPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchPlaceMana" class="BasicAction" method="SearchPlaceMana">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="BuildPlaceBoxNo" class="BasicAction" method="BuildPlaceBoxNo">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="LockPlaceBox" class="BasicAction" method="LockPlaceBox">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="UnLockPlaceBox" class="BasicAction" method="UnLockPlaceBox">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchPlacePlan" class="BasicAction" method="SearchPlacePlan">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchPlaceLevelStatus" class="BasicAction" method="SearchPlaceLevelStatus">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">basicDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+						
+	</package>
+</struts>

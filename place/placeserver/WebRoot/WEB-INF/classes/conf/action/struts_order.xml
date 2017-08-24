@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts_order" extends="json-default">		
+		<action name="SearchOrder" class="OrderAction" method="SearchOrder">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddOrder" class="OrderAction" method="AddOrder">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModOrder" class="OrderAction" method="ModOrder">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewOrder" class="OrderAction" method="ViewOrder">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchOrderCompany" class="OrderAction" method="SearchOrderCompany">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>		
+		<action name="SearchOrderToPlan" class="OrderAction" method="SearchOrderToPlan">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SaveOrderPlan" class="OrderAction" method="SaveOrderPlan">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModOrderPlan" class="OrderAction" method="ModOrderPlan">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="OrderFinish" class="OrderAction" method="OrderFinish">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchOrderPlan" class="OrderAction" method="SearchOrderPlan">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewOrderPlan" class="OrderAction" method="ViewOrderPlan">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewOrderProcess" class="OrderAction" method="ViewOrderProcess">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchBoxToInPlace" class="OrderAction" method="SearchBoxToInPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+		<action name="BoxInPlaceConfirm" class="OrderAction" method="BoxInPlaceConfirm">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchBoxToOutPlace" class="OrderAction" method="SearchBoxToOutPlace">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="BoxOutPlaceConfirm" class="OrderAction" method="BoxOutPlaceConfirm">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchBoxToOutPark" class="OrderAction" method="SearchBoxToOutPark">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="BoxOutParkConfirm" class="OrderAction" method="BoxOutParkConfirm">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SaveOutWeigh" class="OrderAction" method="SaveOutWeigh">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchWeigh" class="OrderAction" method="SearchWeigh">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewWeigh" class="OrderAction" method="ViewWeigh">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchInPlaceWeigh" class="OrderAction" method="SearchInPlaceWeigh">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CancelInPlaceWeight" class="OrderAction" method="CancelInPlaceWeight">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		
+		<action name="SearchOutPlaceWeigh" class="OrderAction" method="SearchOutPlaceWeigh">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CancelOutPlaceWeight" class="OrderAction" method="CancelOutPlaceWeight">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchOutParkWeigh" class="OrderAction" method="SearchOutParkWeigh">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="CancelOutParkWeight" class="OrderAction" method="CancelOutParkWeight">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchNoFinishOrder" class="OrderAction" method="SearchNoFinishOrder">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="AddWaybill" class="OrderAction" method="AddWaybill">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchWaybill" class="OrderAction" method="SearchWaybill">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="SearchWaybillDetail" class="OrderAction" method="SearchWaybillDetail">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ViewWaybill" class="OrderAction" method="ViewWaybill">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="ModWaybill" class="OrderAction" method="ModWaybill">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>
+		<action name="FinishWaybill" class="OrderAction" method="FinishWaybill">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>	
+		<action name="ImportOrder" class="OrderAction" method="ImportOrder">    <!-- 查询接口 -->
+			<result type="json">
+				<param name="excludeProperties">orderDAO</param>  <!--设置JSON中的返回排除属性 -->
+			</result>
+		</action>						
+	</package>
+</struts>

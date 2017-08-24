@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<!-- 基础信息 -->
+	<bean id="orderDAO" class="com.lbs.apps.order.dao.OrderDAOImp" />
+	<bean id="OrderAction" class="com.lbs.apps.order.action.OrderAction" scope="prototype" >
+		<property name="orderDAO">
+			<ref bean="orderDAO"/>
+		</property>
+	</bean>	
+	
+</beans>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="8" />
+        <property name="maxWait" value="1000" />
+        <property name="testOnBorrow" value="true"/>
+        <property name="testOnReturn" value="true"/>
+        <!-- <property name="testWhileIdle" value="true"/> -->
+    </bean>
+
+    <bean id="shardedJedisPool" class="redis.clients.jedis.ShardedJedisPool"  scope="singleton">
+        <constructor-arg index="0" ref="jedisPoolConfig" />
+        <constructor-arg index="1">
+            <list>
+                <bean class="redis.clients.jedis.JedisShardInfo">
+                    <constructor-arg index="0" value="127.0.0.1" />
+                    <constructor-arg index="1" value="6379" />
+                    <constructor-arg index="2" value="1000" />
+                    <constructor-arg index="3" value="1" />
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+    
+    <bean id="redisDataSource" class="com.lbs.apps.common.redis.RedisDataSourceImpl">
+		<property name="shardedJedisPool" >
+			<ref bean="shardedJedisPool"/>
+		</property>
+	</bean>
+	
+	<bean id="redisClientTemplate" class="com.lbs.apps.common.redis.RedisClientTemplate">	
+		<property name="redisDataSource">
+			<ref bean="redisDataSource"/>
+		</property>
+	</bean>
+	
+	<bean id="SpringContextUtil" class="com.lbs.commons.SpringContextUtil" />
+	<!-- 
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.microsoft.sqlserver.jdbc.SQLServerDriver">
+		</property>
+		<property name="url"
+			value="jdbc:sqlserver://127.0.0.1:1433;databaseName=dblw">
+		</property>
+		<property name="username" value="sa"></property>
+		<property name="password" value="jxs1117723"></property>
+	</bean>
+	 -->
+	<!-- 使用TOMCAT连接池 -->
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"> 
+            <property name="jndiName"><value>java:comp/env/jdbc/place</value></property> 
+    </bean> 
+	 
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.SQLServerDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingLocations">
+			<list>
+				<value>classpath:/com/lbs/apps/system/po/*.hbm.xml</value>				
+			</list>
+		</property>	
+	</bean>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>	
+	<!-- 声明一个 Hibernate 3 的事务管理器供代理类自动管理事务用 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>	
+</beans>
